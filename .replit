@@ -33,6 +33,17 @@ args = "Hectron Assistant"
 [[workflows.workflow]]
 name = "Hectron Assistant"
 author = "agent"
+mode = "parallel"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python main.py"
+waitForPort = 5000
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python main.py"
+waitForPort = 5000
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
