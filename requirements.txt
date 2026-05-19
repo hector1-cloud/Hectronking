@@ -1,5 +1,4 @@
-flet 
-os
-openai
-task
-npm
+flet[all]
+requests
+apscheduler
+pillow
